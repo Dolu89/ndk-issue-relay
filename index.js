@@ -1,7 +1,8 @@
+import 'websocket-polyfill'
 import NDK from "@nostr-dev-kit/ndk";
 
 const ndk = new NDK({
-  explicitRelayUrls: ["ws://localhost:29100"],
+  explicitRelayUrls: ["ws://localhost:29100", "ws://localhost:29101"],
 });
 
 async function start() {
